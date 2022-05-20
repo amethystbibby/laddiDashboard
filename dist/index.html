@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="LADDI Dashboard">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width"/>
+
+		<title>LADDI</title>
+
+		<!-- External CSS link -->
+		<link rel="stylesheet" href="../src/style.css">
+	</head>
+	<body class="bg-white dark:bg-gray-900">
+
+		<!-- HEADER -->
+		<nav class="bg-gray-100 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+			<div class="container flex flex-wrap justify-between items-center mx-auto">
+				<span class="font-Catamaran text-gray-700 self-center text-2xl font-extrabold whitespace-nowrap dark:text-white" font-family="'Catamaran'">LADDI</span>
+				<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+					<ul class="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+						<li>
+							<a href="#" class="text-center block py-2 pr-4 pl-3 text-gray-800 bg-white-700 rounded md:bg-transparent md:text-gray-800 md:p-0 dark:text-white" aria-current="page">Courses</a>
+						</li>
+						<li>
+							<button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+								<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+								<svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- MAIN PAGE -->
+		<section class="m-4 flex-column justify-center">
+			<h1 class="my-8 font-sans text-4xl font-extrabold text-gray-700 dark:text-white">Dashboard</h1>
+			<div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg" >
+				<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+					<thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+						<tr>
+							<th scope="col" class="px-6 py-3">
+								Product name
+							</th>
+							<th scope="col" class="px-6 py-3">
+								Color
+							</th>
+							<th scope="col" class="px-6 py-3">
+								Category
+							</th>
+							<th scope="col" class="px-6 py-3">
+								Price
+							</th>
+							<th scope="col" class="px-6 py-3">
+								<span class="sr-only">Edit</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+								Apple MacBook Pro 17"
+							</th>
+							<td class="px-6 py-4">
+								Sliver
+							</td>
+							<td class="px-6 py-4">
+								Laptop
+							</td>
+							<td class="px-6 py-4">
+								$2999
+							</td>
+							<td class="px-6 py-4 text-right">
+								<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+								Microsoft Surface Pro
+							</th>
+							<td class="px-6 py-4">
+								White
+							</td>
+							<td class="px-6 py-4">
+								Laptop PC
+							</td>
+							<td class="px-6 py-4">
+								$1999
+							</td>
+							<td class="px-6 py-4 text-right">
+								<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+							</td>
+						</tr>
+						<tr class="bg-white dark:bg-gray-800">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+								Magic Mouse 2
+							</th>
+							<td class="px-6 py-4">
+								Black
+							</td>
+							<td class="px-6 py-4">
+								Accessories
+							</td>
+							<td class="px-6 py-4">
+								$99
+							</td>
+							<td class="px-6 py-4 text-right">
+								<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+
+		<script type="text/javascript" src="../src/index.js"></script>
+		<script src="../node_modules/flowbite/dist/flowbite.js"></script>
+		<script src="bundle.js"></script>
+	</body>
+</html>
