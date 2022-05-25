@@ -1,4 +1,4 @@
-    // DARK MODE TOGGLE
+// DARK MODE TOGGLE
 function setUpDarkToggle() {
     let themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     let themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
